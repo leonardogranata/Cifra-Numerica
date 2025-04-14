@@ -2,7 +2,7 @@ import time
 
 def encriptarMensagem(mensagem):
     encriptado = []
-    for letra in mensagem.upper():  
+    for letra in mensagem:  
         if letra.isalpha() and letra.isascii():  
             encriptado.append((ord(letra) - ord('A') + 1))
         elif letra.isspace():
